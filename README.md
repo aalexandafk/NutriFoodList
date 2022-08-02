@@ -6,8 +6,8 @@ Recipe Mobile Application
 download the zip folder
 open your android studio
 if you have recent project, close it
-open new project
-open the folder
+then open new project and 
+open the main folder
 click the run button if it turns green
 
 # need
