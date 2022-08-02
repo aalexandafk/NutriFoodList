@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodListActivity"
+    android:gravity="top"
+    android:background="#21182c"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="#7f4d29"
+        android:weightSum="30"
+        android:layout_marginTop="-15dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@raw/food_list"
+            android:layout_weight="10"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@raw/logo"
+            android:layout_weight="20"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical" android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="169dp">
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/category001MGBTTN"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:background="#00000000"
+                            android:src="@raw/category001"/>
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/category002MGBTTN"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:background="#00000000"
+                            android:src="@raw/category002"/>
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/category003MGBTTN"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:background="#00000000"
+                            android:src="@raw/category003"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="169dp">
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/category004MGBTTN"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:background="#00000000"
+                            android:src="@raw/category004"/>
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/category005MGBTTN"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:background="#00000000"
+                            android:src="@raw/category005" />
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/category006MGBTTN"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:background="#00000000"
+                            android:src="@raw/category006"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="180dp">
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/category007MGBTTN"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:background="#00000000"
+                            android:src="@raw/category007"/>
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/category008MGBTTN"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:background="#00000000"
+                            android:src="@raw/category008"/>
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/category009MGBTTN"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:background="#00000000"
+                            android:src="@raw/category009"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/postFLTNGCTNBTTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:src="@raw/ic_post"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:tint="@color/white"
+            app:backgroundTint="#ad652b"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/searchFLTNGCTNBTTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:src="@raw/ic_search"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:tint="@color/white"
+            app:backgroundTint="#c9a251"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

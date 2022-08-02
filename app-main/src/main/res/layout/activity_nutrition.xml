@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="290dp"
+    android:layout_height="338dp"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:paddingHorizontal="0dp">
+
+    <ImageView
+        android:id="@+id/nutritionMGVW"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart"
+        android:background="@android:color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nutritionSCRLLVW">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/nutritionTXTVW"
+                android:textColor="@android:color/black"
+                android:paddingHorizontal="4dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

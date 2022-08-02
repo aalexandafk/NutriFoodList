@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity"
+    android:gravity="center"
+    android:background="#21182c"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <ImageView
+                android:layout_width="600px"
+                android:layout_height="660px"
+                android:src="@raw/logo_main"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/txtrecipetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="Title"
+                android:inputType="text"
+                android:background="@android:color/background_light"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="22dp"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/txtcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="469px"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="Recipe"
+                android:inputType="textMultiLine"
+                android:background="@android:color/background_light"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="22dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="start"/>
+
+
+            <RelativeLayout
+                android:layout_width="630px"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="Title"
+                android:inputType="text"
+                android:background="@android:color/background_light"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="22dp"
+                android:layout_marginBottom="20dp">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/txtnutrition"
+                android:layout_width="wrap_content"
+                android:layout_height="469px"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="Nutrition"
+                android:inputType="textMultiLine"
+                android:background="@android:color/background_light"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="22dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="start"/>
+
+            <Button
+                android:id="@+id/btnpost"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Post"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Login"
+                android:background="#ad652b"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity"
+    android:gravity="center"
+    android:background="#21182c"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="600px"
+        android:layout_height="660px"
+        android:src="@raw/logo_main"
+        android:layout_marginBottom="100dp"/>
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:background="@android:color/background_light"
+        android:paddingVertical="6dp"
+        android:paddingHorizontal="22dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/txtpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@android:color/background_light"
+        android:paddingVertical="6dp"
+        android:paddingHorizontal="22dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnlog"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Login"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Log In"
+        android:background="#ad652b"/>
+
+
+    <Button
+        android:id="@+id/btnreg"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Register"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Login"
+        android:background="#ad652b"/>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="#21182c"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="600px"
+        android:layout_height="660px"
+        android:src="@raw/logo_main"
+        android:layout_marginBottom="100dp"/>
+
+
+    <ImageView
+        android:layout_width="600px"
+        android:layout_height="220px"
+        android:src="@raw/log_in_button"
+        android:id="@+id/logInMGVW"/>
+
+    <ImageView
+        android:layout_width="600px"
+        android:layout_height="220px"
+        android:src="@raw/sign_up_button"
+        android:id="@+id/signUpMGVW"/>
+
+
+</LinearLayout>

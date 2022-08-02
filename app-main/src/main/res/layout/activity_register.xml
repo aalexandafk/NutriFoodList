@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:gravity="center"
+    android:background="#21182c"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <ImageView
+                android:layout_width="600px"
+                android:layout_height="660px"
+                android:src="@raw/logo_main"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/txtfname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:background="@android:color/background_light"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="22dp"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/txtmname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="Middle Name"
+                android:inputType="textPersonName"
+                android:background="@android:color/background_light"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="22dp"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/txtlname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:background="@android:color/background_light"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="22dp"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:background="@android:color/background_light"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="22dp"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/txtupass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:background="@android:color/background_light"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="22dp"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/txtcpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="Confirm Passw..."
+                android:inputType="textPassword"
+                android:background="@android:color/background_light"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="22dp"/>
+
+            <Button
+                android:id="@+id/btnreg"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Register"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Login"
+                android:background="#ad652b"/>
+
+            <Button
+                android:id="@+id/btnlog"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Login"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Log In"
+                android:background="#ad652b"
+                android:layout_marginBottom="22dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
